@@ -45,7 +45,6 @@ class Vehicle:
             self.y = HEIGHT//2 + 10 
 
     def move(self):
-        stop_line = 150
         center_zone = 100
         if self.direction == "N" and self.y > HEIGHT//2 - center_zone: self.crossed = True
         if self.direction == "S" and self.y < HEIGHT//2 + center_zone: self.crossed = True
@@ -124,4 +123,5 @@ while running:
     pygame.display.update()
 
 pygame.quit()
+
 sys.exit()
